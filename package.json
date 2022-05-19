@@ -1,0 +1,24 @@
+{
+  "name": "nyana.moe",
+  "version": "1.0.0",
+  "description": "nyana.moe's backend + frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actuallyeunha/nyana.moe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/actuallyeunha/nyana.moe/issues"
+  },
+  "homepage": "https://github.com/actuallyeunha/nyana.moe#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
