@@ -1,0 +1,36 @@
+* { 
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #0c0d0e;
+}
+
+#common-text { 
+    font-size:14px; 
+    color:#A9A9A9; 
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding-right: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    color: #d2aaf8;
+}
+
+.topnav a.active {
+    color: #9767c4;
+}
+
+.topnav a.active:hover {
+    color: #d2aaf8;
+}
+
+#bottom { 
+    position:absolute; 
+    bottom:0; 
+    width:100%; 
+    height:60px; 
+}
