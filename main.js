@@ -26,6 +26,22 @@ app.get("/contact", (req, res)=>{
     res.sendFile(path.join(__dirname, "/www/contact.html"));
 });
 
+app.get("/download/:file", (req, res)=>{
+    log.log(`Request recieved » DOWNLOAD '${req.path, req.params.file}' ༅⁺೨*˚·`);
+    try {
+        const file = `${__dirname}/www/public/files/${req.params.file}`;
+        if (file){
+            res.download(file);
+        }
+    } catch (err) {
+        log.log("Something went wrong...");
+        log.error(err);
+        res.statusCode(404);
+        return;
+    }
+    
+})
+
 // Run the website
 app.listen(process.env.PORT, (err) =>{
     if(err){
